@@ -10,14 +10,19 @@
   <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
 
   <script type="module">
-    const rootElement = document.getElementById('root');
+    const rootElement = document.getElementById('root')
 
-    const helloElement = React.createElement("span", {}, "Hello");
-    const worldElement = React.createElement("span", {}, "World");
-    const containerElement = React.createElement('div', {className: 'container'}, helloElement, " ", worldElement);
-    
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(containerElement);
+    const helloElement = React.createElement('span', {}, 'Hello')
+    const worldElement = React.createElement('span', {}, 'World')
+    const containerElement = React.createElement(
+      'div',
+      {className: 'container'},
+      helloElement,
+      ' ',
+      worldElement,
+    )
 
+    const root = ReactDOM.createRoot(rootElement)
+    root.render(containerElement)
   </script>
 </body>
